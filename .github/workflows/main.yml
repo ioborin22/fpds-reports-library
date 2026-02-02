@@ -33,6 +33,9 @@ jobs:
             set -e
             cd /opt/getwab/shared/reports_catalog
             # cleanup
+            sudo rm -rf /opt/getwab/shared/reports_catalog/.git
+            sudo rm -rf /opt/getwab/shared/reports_catalog/.github
+            sudo rm -rf /opt/getwab/shared/reports_catalog/.DS_Store
             # permissions (safe, read-only)
             chown -R root:root /opt/getwab/shared/reports_catalog
             find /opt/getwab/shared/reports_catalog -type d -exec chmod 755 {} \;
