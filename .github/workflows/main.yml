@@ -1,0 +1,39 @@
+name: Deploy Reports Catalog
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Sync Files to Server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HETZNER_IP }}
+          username: root
+          key: ${{ secrets.HETZNER_KEY }}
+          source: "."
+          target: "/opt/getwab/shared/reports_catalog"
+          strip_components: 1
+
+      - name: Cleanup and Permissions on Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HETZNER_IP }}
+          username: root
+          key: ${{ secrets.HETZNER_KEY }}
+          command_timeout: 90m
+          script: |
+            set -e
+            cd /opt/getwab/shared/reports_catalog
+            # cleanup
+            # permissions (safe, read-only)
+            chown -R root:root /opt/getwab/shared/reports_catalog
+            find /opt/getwab/shared/reports_catalog -type d -exec chmod 755 {} \;
+            find /opt/getwab/shared/reports_catalog -type f -exec chmod 644 {} \;
