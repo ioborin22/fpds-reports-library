@@ -68,3 +68,407 @@ reports:
     report_description: Highlights potential risks and oversight gaps in federal contract data.
     report_vars: null
     report_price: 149.00
+
+  - report_code: SFPR-GEO-EL-1
+    report_type: EL
+    report_category: GEO
+    report_title: "Federal Contract Spending by U.S. State"
+    report_description: >
+      Aggregates total contract obligations by U.S. state over the selected time range.
+      Includes only AWARD records across 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-GEO-EL-2
+    report_type: EL
+    report_category: GEO
+    report_title: "Year-over-Year Spending by U.S. State"
+    report_description: >
+      Compares annual contract obligations between two years for each U.S. state.
+      Includes only AWARD records across 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-GEO-EL-3
+    report_type: EL
+    report_category: GEO
+    report_title: "Funding Organization Spending Breakdown by State"
+    report_description: >
+      Breaks down total contract obligations within each U.S. state by funding agency
+      over the selected time period.
+      Only AWARD data is included.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - state
+      - start_year
+      - end_year
+    report_price: 49.00
+
+    - report_code: SFPR-FUND-EL-1
+    report_type: EL
+    report_category: FUND
+    report_title: "Top Funding Agencies by Total Obligations"
+    report_description: >
+      Lists top federal funding agencies by total contract obligations over the selected period.
+      Includes only records of type AWARD across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-FUND-EL-2
+    report_type: EL
+    report_category: FUND
+    report_title: "Year-over-Year Change in Funding Agency Obligations"
+    report_description: >
+      Compares federal funding agencies by change in contract obligations between two years.
+      Includes only AWARD records in 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-FUND-EL-3
+    report_type: EL
+    report_category: FUND
+    report_title: "PSC Breakdown by Funding Agency"
+    report_description: >
+      Breaks down contract obligations by PSC group for a selected funding agency and year range.
+      Only AWARD data is included.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - department_id
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-TIME-EL-1
+    report_type: EL
+    report_category: TIME
+    report_title: "Annual Contract Obligations Trend"
+    report_description: >
+      Tracks total contract obligations by year to identify long-term spending patterns.
+      Includes only AWARD records across 50 U.S. states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-TIME-EL-2
+    report_type: EL
+    report_category: TIME
+    report_title: "Quarter-over-Quarter Spending Dynamics"
+    report_description: >
+      Analyzes changes in contract obligations between consecutive quarters.
+      Focuses on AWARD records in 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_quarter
+      - end_quarter
+    report_price: 49.00
+
+  - report_code: SFPR-TIME-EL-3
+    report_type: EL
+    report_category: TIME
+    report_title: "Monthly Spending Volatility Analysis"
+    report_description: >
+      Examines monthly fluctuations in contract obligations to detect seasonal trends.
+      Limited to AWARD records across all 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV types are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_month
+      - end_month
+    report_price: 49.00
+
+  - report_code: SFPR-VEND-EL-1
+    report_type: EL
+    report_category: VEND
+    report_title: "Top Vendors by Total Contract Obligations"
+    report_description: >
+      Ranks vendors by total contract obligations over the selected period.
+      Includes only AWARD records across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-VEND-EL-2
+    report_type: EL
+    report_category: VEND
+    report_title: "Vendor Concentration Analysis"
+    report_description: >
+      Measures the degree of concentration among top vendors in federal contracting.
+      Focuses on AWARD records in 50 U.S. states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-VEND-EL-3
+    report_type: EL
+    report_category: VEND
+    report_title: "Year-over-Year Vendor Performance Change"
+    report_description: >
+      Compares vendor performance by change in contract obligations between two years.
+      Includes only AWARD data across all 50 states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-PSC-EL-1
+    report_type: EL
+    report_category: PSC
+    report_title: "PSC Code Distribution by Total Obligations"
+    report_description: >
+      Analyzes the distribution of contract obligations across PSC (Product and Service Code)
+      categories over the selected period.
+      Includes only AWARD records from 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-PSC-EL-2
+    report_type: EL
+    report_category: PSC
+    report_title: "Year-over-Year PSC Spending Trends"
+    report_description: >
+      Compares contract obligations across PSC codes between two consecutive years
+      to identify shifting spending patterns.
+      Limited to AWARD records in all 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-PSC-EL-3
+    report_type: EL
+    report_category: PSC
+    report_title: "Top PSC Codes by Funding Agency"
+    report_description: >
+      Breaks down contract obligations by top PSC codes for selected funding agencies
+      over the specified time range.
+      Includes only AWARD data across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - department_id
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-META-EL-1
+    report_type: EL
+    report_category: META
+    report_title: "Contract Data Quality and Completeness Overview"
+    report_description: >
+      Evaluates the overall quality and completeness of federal contract data,
+      including missing fields and inconsistencies.
+      Focuses on AWARD records across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-META-EL-2
+    report_type: EL
+    report_category: META
+    report_title: "Outlier Detection in Contract Obligations"
+    report_description: >
+      Identifies anomalous contract awards and outlier transactions
+      based on statistical thresholds.
+      Analysis covers AWARD records in all 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-META-EL-3
+    report_type: EL
+    report_category: META
+    report_title: "Trend Analysis of Data Anomalies Over Time"
+    report_description: >
+      Tracks changes in data quality metrics and anomaly rates across years
+      to detect systemic issues.
+      Limited to AWARD data across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-FCST-EL-1
+    report_type: EL
+    report_category: FCST
+    report_title: "Short-Term Federal Spending Forecast"
+    report_description: >
+      Provides a 12-month forward projection of federal contract obligations
+      based on historical trends and current data.
+      Includes only AWARD records across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - forecast_horizon
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-FCST-EL-2
+    report_type: EL
+    report_category: FCST
+    report_title: "Sector-Specific Spending Projections"
+    report_description: >
+      Forecasts contract obligations by major industry sectors (NAICS)
+      over the next 24 months.
+      Analysis is limited to AWARD data in all 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - sector_id
+      - forecast_horizon
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-FCST-EL-3
+    report_type: EL
+    report_category: FCST
+    report_title: "Agency-Level Spending Predictions"
+    report_description: >
+      Generates 18-month forecasts of contract obligations
+      for individual federal agencies.
+      Includes only AWARD records from 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - department_id
+      - forecast_horizon
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-COMP-EL-1
+    report_type: EL
+    report_category: COMP
+    report_title: "Federal Contract Compliance Risk Scorecard"
+    report_description: >
+      Evaluates compliance risk levels across federal contracts
+      using predefined regulatory indicators.
+      Includes only AWARD records from 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-COMP-EL-2
+    report_type: EL
+    report_category: COMP
+    report_title: "Oversight Gap Analysis by Contract Type"
+    report_description: >
+      Identifies areas with insufficient compliance oversight
+      based on contract category and value thresholds.
+      Analysis covers AWARD records in all 50 states.
+      IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV are excluded.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - contract_type
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: SFPR-COMP-EL-3
+    report_type: EL
+    report_category: COMP
+    report_title: "Year-over-Year Compliance Risk Trends"
+    report_description: >
+      Tracks changes in compliance risk metrics
+      between consecutive years to identify emerging risk patterns.
+      Limited to AWARD data across 50 U.S. states.
+      Excludes IDV, OTHERTRANSACTIONAWARD, and OTHERTRANSACTIONIDV.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - start_year
+      - end_year
+    report_price: 49.00
+
+  - report_code: CRA360
+    report_type: TOOL
+    report_category: RISK
+    report_title: "Comprehensive Risk Assessment 360° (CRA360)"
+    report_description: >
+      A holistic risk evaluation tool providing a 360-degree view
+      of organizational risk exposure.
+      Combines quantitative metrics and qualitative analysis
+      to assess vulnerabilities across operational, financial,
+      compliance, and strategic domains.
+      Generates risk scores, identifies key risk drivers,
+      and offers mitigation recommendations.
+    report_methodology: null
+    report_usage: null
+    report_vars:
+      - organization_id
+      - assessment_date
+      - scope_parameters
+    report_price: 399.00
+
+
