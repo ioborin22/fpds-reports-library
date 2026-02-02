@@ -116,7 +116,7 @@ reports:
       - end_year
     report_price: 49.00
 
-    - report_code: SFPR-FUND-EL-1
+  - report_code: SFPR-FUND-EL-1
     report_type: EL
     report_category: FUND
     report_title: "Top Funding Agencies by Total Obligations"
