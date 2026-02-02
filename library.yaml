@@ -1,0 +1,70 @@
+version: 1.0
+currency: USD
+
+reports:
+  - report_code: SFPR-GEO-COLL-1
+    report_type: COLL
+    report_category: GEO
+    report_title: U.S. Federal Contract Spending with Focus on a Specific State
+    report_description: Total obligated amounts by U.S. state, including department-level breakdown.
+    report_vars: [state, start_year, end_year]
+    report_price: 149.00
+
+  - report_code: SFPR-FUND-COLL-1
+    report_type: COLL
+    report_category: FUND
+    report_title: Federal Contract Obligations by Funding Organization
+    report_description: >
+      Provides a multi-year breakdown of total contract obligations issued by the selected
+      federal funding agency. Includes comparisons, aggregated subtotals, and PSC distribution.
+      Limited to AWARD records across 50 U.S. states. IDV, OTHERAWARD, and OTHERIDV types are excluded.
+    report_vars: [department_id, start_year, end_year]
+    report_price: 149.00
+
+  - report_code: SFPR-TIME-COLL-1
+    report_type: COLL
+    report_category: TIME
+    report_title: Federal Contracting Trends Over Time
+    report_description: Analyzes growth and decline in total contract obligations over a selected time range.
+    report_vars: null
+    report_price: 149.00
+
+  - report_code: SFPR-VEND-COLL-1
+    report_type: COLL
+    report_category: VEND
+    report_title: Vendor Profile and Contract Analysis
+    report_description: Analyzes vendors and explores contract distribution across federal suppliers.
+    report_vars: null
+    report_price: 149.00
+
+  - report_code: SFPR-PSC-COLL-1
+    report_type: COLL
+    report_category: PSC
+    report_title: Spending by PSC and NAICS Codes
+    report_description: Breaks down contract awards by product/service codes and industry classification.
+    report_vars: null
+    report_price: 149.00
+
+  - report_code: SFPR-META-COLL-1
+    report_type: COLL
+    report_category: META
+    report_title: Contract Volume & Anomaly Overview
+    report_description: Aggregated metrics, outlier detection, and summary of record consistency.
+    report_vars: null
+    report_price: 149.00
+
+  - report_code: SFPR-FCST-COLL-1
+    report_type: COLL
+    report_category: FCST
+    report_title: Forecasting Federal Spending by Sector
+    report_description: Predictive analysis of contract volume by department and sector.
+    report_vars: null
+    report_price: 149.00
+
+  - report_code: SFPR-COMP-COLL-1
+    report_type: COLL
+    report_category: COMP
+    report_title: Compliance Risk and Oversight Patterns
+    report_description: Highlights potential risks and oversight gaps in federal contract data.
+    report_vars: null
+    report_price: 149.00
